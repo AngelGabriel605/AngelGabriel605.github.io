@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 @font-face {
-  font-family: "JetBrainsMono-Regular";
-  src: url("../fonts/JetBrainsMono-Regular.ttf");
+  font-family: "Minecraft";
+  src: url("../fonts/Minecraft.ttf");
 }
 
 html, body {
@@ -16,7 +16,7 @@ body * {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'JetBrainsMono-Regular', sans-serif;
+  font-family: 'Minecraft', sans-serif;
   text-align: center;
   color: #fff;
   padding-top: 30px;
@@ -319,6 +319,69 @@ a {
   line-height: 1.7;
   font-size: 19px;
   color: white;
+}
+
+/* smps */
+
+.smps_container {
+  padding-top: 50px; /* space between the element of the grid and the paragraph of the top */
+  display: grid;
+  width: 100%;
+  gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(380px, auto)); /* repeat as many columns as possible with a minimun size of 380px */
+}
+
+.smps_subtitle {
+  padding-top: 20px;
+  font-style: italic;
+}
+
+.smps_post {
+  border-radius: 15px;
+  padding: 30px;
+  display: grid;
+  width: 380px; 
+  margin: 0 auto; 
+  margin-bottom: 20px;
+  /* shadow */
+  -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	box-shadow: 0px 3px 3px 5px rgba(0,0,0,0.75);
+  /* gradient */
+  background: rgb(30,61,210);
+  background: linear-gradient(90deg, rgba(30,61,210,1) 0%, rgba(13,92,175,1) 50%, rgba(20,121,131,1) 100%);
+}
+
+.smps_post:hover {
+  -webkit-box-shadow: -1px 1px 3px -1px rgba(102,103,110,1);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(181,184,187,1);
+	box-shadow: 0px 3px 3px 5px rgba(214,227,228,1);
+}
+
+.smps_title {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-top: 0 !important;
+}
+
+.smps_title:hover {
+  color: #fa3757;
+}
+
+.smps_paragraph {
+  line-height: 1.7;
+}
+
+.smps_ghostech_paragraph {
+  font-size: 20px;
+}
+
+.smps_bolillocraft_paragraph {
+  font-size: 19px;
+}
+
+.smps_revolucionline_paragraph {
+  font-size: 22px;
 }
 
 /* questions */
